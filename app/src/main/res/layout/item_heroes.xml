@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="444dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:layout_gravity="center|top">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:id="@+id/img_first"
+        android:src="@drawable/portal_background"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        style="@style/TextViewItem"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="54dp"
+        android:id="@+id/tv_status"
+        />
+
+    <TextView
+        style="@style/TextViewName"
+        android:id="@+id/tv_name"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="94dp"
+        android:layout_marginStart="24dp"
+        />
+
+
+</androidx.cardview.widget.CardView>

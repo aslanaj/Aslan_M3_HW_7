@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aslan_M3_HW_7</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_status_FF">Status</string>
+    <string name="tv_name_FF">Name</string>
+    <string name="tv_detail">Details</string>
+</resources>
