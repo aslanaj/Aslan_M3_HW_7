@@ -2,7 +2,7 @@
 <resources>
     <style name="TextViewItem" parent="@android:style/Widget.TextView">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColor">@color/dark_blue</item>
         <item name="android:text">@string/tv_status_FF</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -11,7 +11,7 @@
     </style>
 
     <style name="TextViewName" parent="TextViewItem">
-        <item name="android:textSize">34sp</item>
+        <item name="android:textSize">32sp</item>
         <item name="android:textColor">@color/dark_blue</item>
         <item name="android:text">@string/tv_name_FF</item>
         <item name="android:layout_marginStart">0dp</item>

@@ -35,11 +35,13 @@ class FirstFragment : Fragment() {
 
     private fun loadData() {
         heroesList.apply {
-            add(Heroes("Alive","Rick Sanchez","https://static.tvtropes.org/pmwiki/pub/images/abcb6534_7913_4eb1_a7a5_62b081ebc628.png"))
-            add(Heroes("Alive","Morty","https://m.media-amazon.com/images/S/aplus-media-library-service-media/365e5edb-7b7f-415a-81c7-a848936e9e38.__CR0,0,300,300_PT0_SX300_V1___.jpg"))
-            add(Heroes("Alive","Rick Sanchez","https://static.tvtropes.org/pmwiki/pub/images/abcb6534_7913_4eb1_a7a5_62b081ebc628.png"))
-            add(Heroes("Alive","Rick Sanchez","https://static.tvtropes.org/pmwiki/pub/images/abcb6534_7913_4eb1_a7a5_62b081ebc628.png"))
-            add(Heroes("Alive","Rick Sanchez","https://static.tvtropes.org/pmwiki/pub/images/abcb6534_7913_4eb1_a7a5_62b081ebc628.png"))
+            add(Heroes("Alive","Naruto Uzumaki","https://avatanplus.com/files/resources/original/58dd2f10de6af15b1fffda0f.png"))
+            add(Heroes("Alive","Sasuke Uchiha","https://w7.pngwing.com/pngs/17/344/png-transparent-sasuke-uchiha-itachi-uchiha-naruto-uchiha-clan-naruto-black-hair-manga-sasuke-uchiha.png"))
+            add(Heroes("Dead","Minato Namikadze","https://www.pngmart.com/files/22/Minato-Namikaze-PNG-Photos.png"))
+            add(Heroes("Dead","Madara Uchiha","https://i.pinimg.com/originals/75/d8/d6/75d8d67e67c813ef2a38e28e3bdcf244.jpg"))
+            add(Heroes("Dead","Pain Akatsuki","https://i1.sndcdn.com/artworks-000493810884-ythxh2-t500x500.jpg"))
+            add(Heroes("Dead","Itachi Uchiha","https://wiki.jcdn.ru/w/images/thumb/6/60/ItachiManga.jpg/250px-ItachiManga.jpg"))
+            add(Heroes("Alive","Kakashi Hatake","https://amiel.club/uploads/posts/2022-03/1647721152_1-amiel-club-p-kartinki-kakashi-iz-naruto-1.jpg"))
         }
     }
 
