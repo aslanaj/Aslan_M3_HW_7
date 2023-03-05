@@ -11,7 +11,7 @@ import kotlin.reflect.KFunction0
 
 class HeroesAdapter(
     val heroesList: ArrayList<Heroes>,
-    val onClick: (position: Int)->Unit
+    val onClick: (heroes: Heroes)->Unit
 ): RecyclerView.Adapter<HeroesAdapter.HeroesViewHolder>() {
 
 
@@ -31,7 +31,6 @@ class HeroesAdapter(
     inner class HeroesViewHolder(private val binding: ItemHeroesBinding):
         RecyclerView.ViewHolder(binding.root){
 
-
         fun bind() {
             val heroes = heroesList[adapterPosition]
             binding.apply {
@@ -40,7 +39,7 @@ class HeroesAdapter(
                 imgFirst.loadImage(heroes.heroesImage)
             }
             itemView.setOnClickListener {
-                onClick(adapterPosition)
+                onClick.invoke(heroes)
             }
         }
 

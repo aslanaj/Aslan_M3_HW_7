@@ -10,11 +10,20 @@
         android:id="@+id/firstFragment"
         android:name="com.example.aslan_m3_hw_7.fragments.first_fragment.FirstFragment"
         android:label="fragment_first"
-        tools:layout="@layout/fragment_first" />
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.aslan_m3_hw_7.fragments.second_fragment.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second">
+
+        <argument
+            android:name="Heroes"
+            app:argType="com.example.aslan_m3_hw_7.module.Heroes"/>
+    </fragment>
 
 </navigation>

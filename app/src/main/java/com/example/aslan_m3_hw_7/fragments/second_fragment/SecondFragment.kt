@@ -7,12 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.aslan_m3_hw_7.R
 import com.example.aslan_m3_hw_7.databinding.FragmentSecondBinding
+import com.example.aslan_m3_hw_7.fragments.first_fragment.FirstFragment
 import com.example.aslan_m3_hw_7.loadImage
 import com.example.aslan_m3_hw_7.module.Heroes
 
 class SecondFragment : Fragment() {
 
     private lateinit var binding: FragmentSecondBinding
+    private lateinit var navArgs: SecondFragmentArgs
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,11 +26,15 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val result = arguments?.getSerializable("Key") as Heroes
-        with(binding) {
-            tvName.text = result.heroesName.toString()
-            tvStatus.text = result.heroesStatus.toString()
-            imgFirst.loadImage(result.heroesImage)
+arguments?.let {
+navArgs = SecondFragmentArgs.fromBundle(it)
+}
+
+
+        binding.apply {
+            tvName.text = navArgs.Heroes.heroesName
+            tvStatus.text = navArgs.Heroes.heroesStatus
+            imgFirst.loadImage(navArgs.Heroes.heroesImage)
         }
 
     }

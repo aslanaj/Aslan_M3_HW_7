@@ -12,7 +12,7 @@
 
     <style name="TextViewName" parent="TextViewItem">
         <item name="android:textSize">32sp</item>
-        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:text">@string/tv_name_FF</item>
         <item name="android:layout_marginStart">0dp</item>
     </style>

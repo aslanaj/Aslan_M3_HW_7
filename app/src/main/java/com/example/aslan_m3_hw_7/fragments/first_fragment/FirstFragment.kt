@@ -15,7 +15,8 @@ import com.example.aslan_m3_hw_7.module.Heroes
 class FirstFragment : Fragment() {
 
     private lateinit var binding: FragmentFirstBinding
-    private var heroesList = arrayListOf<Heroes>()
+    private lateinit var heroesList: ArrayList<Heroes>
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,13 +28,14 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        loadData()
         val adapter = HeroesAdapter(heroesList, this::onClick)
         binding.rvHeroes.adapter = adapter
-        loadData()
+
     }
 
     private fun loadData() {
+        heroesList = ArrayList<Heroes>()
         heroesList.apply {
             add(Heroes("Alive","Naruto Uzumaki","https://avatanplus.com/files/resources/original/58dd2f10de6af15b1fffda0f.png"))
             add(Heroes("Alive","Sasuke Uchiha","https://w7.pngwing.com/pngs/17/344/png-transparent-sasuke-uchiha-itachi-uchiha-naruto-uchiha-clan-naruto-black-hair-manga-sasuke-uchiha.png"))
@@ -45,13 +47,10 @@ class FirstFragment : Fragment() {
         }
     }
 
-    private fun onClick(position: Int) {
-        findNavController().navigate(R.id.secondFragment,
-            bundleOf("Key" to heroesList[position]))
+    private fun onClick(heroes: Heroes) {
+
+        findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(heroes))
 
     }
-
-
-
 
 }

@@ -13,7 +13,7 @@
 
     <style name="TextViewDetailName" parent="TextViewDetail">
         <item name="android:textSize">34sp</item>
-        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:text">@string/tv_name_FF</item>
 
     </style>
